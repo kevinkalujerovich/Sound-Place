@@ -1,0 +1,424 @@
+$color_principal:black;
+$color_secundario:white;
+$color_fondo:whitesmoke;
+$font_principal:'Oswald', sans-serif;
+$font_secundario:'Pavanam', sans-serif;
+$borde_imagen:1px solid black;
+$font_weigth:bold;
+
+
+body {
+    margin:0;
+    padding:0;
+    background-color:$color_secundario;
+  }
+  
+
+/*NAVIGATION*/
+  nav{
+    background-color:$color_principal;
+     a{
+        color:$color_secundario;
+    }
+}
+.nav-estilo{
+    height: 100vh;
+    a{
+        font-size: 3.5em;
+        font-family:$font_secundario;
+        line-height: 1.8em;
+        letter-spacing: 5px;
+    }
+}
+.navbar-toggler {
+    .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+}
+header{
+    img{
+        margin-right:0.4em ;
+        margin-bottom: 0.2em;
+        border-radius: 50%;
+    }
+   
+}
+/*INDEX*/
+.body-index{
+    background-color: $color_principal;
+    .bloque_index{
+        padding-top: 5%;
+        h1{
+            color:$color_secundario;
+            font-size: 5em;
+            font-family: $font_principal;
+            font-weight: $font_weigth;
+        }
+        p{
+            color:$color_secundario;
+            font-size:18px;
+            font-family: $font_secundario;
+            line-height: 5px;
+        }
+        .btn{
+            margin-top: 10px;
+        }
+        
+       
+    }
+}
+.titulo_principal{
+    font-family:$font_secundario;
+    font-size: 400%;
+    margin-top: 100px;
+    padding-bottom:0.8em ;
+    letter-spacing: 5px;
+    text-align: center;
+    color:$font_principal;
+}
+/*ABOUT US */
+.bloque_aboutus{
+    padding-top:50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    img{
+        width: 100%;
+        border:$borde_imagen;
+    }
+    p{
+        font-family: $font_secundario;
+        font-size: 1.2em;
+        padding-top:50px;
+    }
+}.iframe-videos{
+    width:400px; 
+    height:220px;
+}
+
+
+/*ARTISTS*/
+.bloque_artista{
+    margin-bottom: 30px;
+}
+.artista{
+    margin-bottom:80px;
+    h2{
+        padding-top: 1em;
+        font-family:$font_secundario;
+        text-align: center;
+        font-size: 1.5em;
+        color:$color_principal;
+        letter-spacing: 2px;
+    }
+
+    a{
+        text-decoration:none;
+    i{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1.2em;
+    }
+    }
+    p{
+
+        font-size: 1.1em;
+    }
+    img{
+        width: 80%;
+        height: 20em;
+        border:$borde_imagen;
+    }
+}
+
+/*RELEASES*/
+
+.bloque{
+    margin-bottom: 20px;
+    h2{
+        font-size: 1em;
+        font-family: $font_principal;
+        font-weight:$font_weigth;
+    }
+    p{
+        font-size: 0.9em;
+    }
+}
+.card-body{
+
+    a{
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size:0.8em;
+        color:gray;
+    }
+    a:hover{
+        text-decoration: none;
+        color:$color_principal;
+    }
+
+}
+.bloque-card{
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.bloque_card-modelo{
+    width: 100%;
+}
+.link{
+    padding-top: 40px;
+    font-size: 1.2em;
+}
+/*CONTACT*/
+.bloque_contact{
+    h2{
+        font-family: $font_secundario;
+        font-size: 2em;
+    letter-spacing: 5px;
+    font-weight: $font_weigth;
+    }
+    p{
+        font-family: $font_secundario;
+        font-size: 1.2em;
+}
+}
+.bloque_info{
+    background-color: $color_fondo;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    h3{
+        font-family:$font_principal;
+        font-size: 1.2em;
+    font-weight: $font_weigth;
+    }
+    p{
+        font-family: $font_secundario;
+        font-size: 1.2em;
+}
+}
+.titulo_form{
+    font-family:$font_principal;
+        font-size: 2.5em;
+        padding-top: 60px;
+}
+.mapa_contact{
+    width: 400px;
+    height: 400px;
+}
+
+.redes_contact{
+    padding-top: 35px;
+    a{
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 1.4em;
+    }
+}
+/*LOGICA CON SCSS  */
+$lista-colores: (
+    /* $key : $val */
+    face: #3b5998,
+    insta:  #8134AF,
+    twitter:  #00acee,
+    sound: #ff7700,
+    mix: #273a4b,
+    spoty:#81b71a
+
+);
+@each $nombre-color, $color in $lista-colores {
+    .color-#{$nombre-color} {
+        color: $color;
+    }
+}
+
+/*FOOTER*/
+.footer{
+    margin-top: 8em;
+    background-color:$color_principal;
+    padding-top: 0.8em;
+    p{
+        color:$color_secundario;
+        font-family:$font_principal; 
+        font-size: 0.8em;
+    }
+}
+/*MODAL*/
+
+.modal-header{
+        background-color: $color_principal;
+    h5{ 
+    font-family:$font_secundario;
+font-weight:$font_weigth;
+letter-spacing: 2px;
+color:$color_secundario;
+}
+}
+
+.modal-content{
+    p{
+    
+        font-family:$font_principal; 
+        font-size:1em;
+        padding:10px;
+    }
+    img{
+        width: 100%;
+        height: 17.5em;
+        border:$borde_imagen;
+    }
+}
+.modal-footer{
+a{
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 1.4em;
+}
+}
+
+.close{
+     color: #fff; 
+    opacity: 1;
+    
+}
+.close:hover{
+    color: $color_secundario;
+}
+/*SALTOS*/
+@media (max-width: 425px){
+    .titulo_principal{
+        font-size: 200%;
+        letter-spacing: 5px;
+    }
+    /*INDEX*/
+    .body-index{
+        .bloque_index{
+            padding-top: 40%;
+            h1{
+                font-size: 3.5em;
+            }
+            p{
+                font-size: 15px;
+                
+            }
+        }
+    }
+    /*NAVIGATION*/
+    .nav-estilo{
+        padding-top: 40px;
+        a{
+            font-size: 2.5em;
+            line-height: 1.3em;
+        }
+    }
+   
+
+   
+/*ABOUT US*/
+.bloque_aboutus{
+    img{
+        width: 100%;
+        height:9em;
+    }
+    p{
+        font-size: 0.9em;
+    }
+}
+.iframe-videos{
+    width: 250px;
+    height: 130px;
+}
+/*ARTISTS*/
+    .artista{
+      img{
+        height: 9em;
+        width: 100%;
+    }
+    h2{
+        
+        font-size: 1em;
+    }
+ 
+    }
+/*CONTACT*/
+
+.redes_contact{
+    a{
+        font-size: 1em;
+    }
+}
+.bloque_contact{
+    h2{
+        font-size: 1.5em;
+    }
+    p{
+        font-size:0.8em;
+}
+}
+.bloque_info{
+    p{
+        font-size:0.8em;
+}
+}
+.mapa_contact{
+    width: 250px;
+    height: 250px;
+}
+.titulo_form{
+    font-size: 1.8em;
+}
+/*RELEASES*/
+.card-body{
+
+    a{
+        color:$color_principal;
+    }
+}
+/*MODAL */
+.modal-content{
+    p{
+        font-size:0.6em;
+    }
+    img{
+        width: 100%;
+        height:9em;
+    }
+}
+
+
+}
+@media (min-width: 0px) and (max-width:768px){
+/*NAVIGATION*/
+.nav-estilo{
+    padding-top: 40px;
+    a{
+        font-size: 2.5em;
+        line-height: 1.3em;
+    }
+}
+}
+
+@media (min-width: 768px) and (max-width:1024px){
+   
+    /*ABOUT US*/
+    .iframe-videos{
+        width:300px; 
+        height:170px;
+    }
+    /*RELEASES*/
+    .card-body{
+        a{
+            margin-left: 8px;
+            margin-right: 8px;
+            font-size:0.6em;
+            color:$color_principal;
+        }
+}
+.artista{
+   
+    img{
+        width: 90%;
+        height: 15em;
+        border:$borde_imagen;
+    }
+}
+}
