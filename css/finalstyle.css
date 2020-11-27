@@ -39,7 +39,10 @@ header img {
       color: white;
       font-size: 18px;
       font-family: "Pavanam", sans-serif;
-      line-height: 5px; }
+      line-height: 5px;
+      margin-top: 10px; }
+      .body-index .bloque_index p a:hover {
+        text-decoration: none; }
     .body-index .bloque_index .btn {
       margin-top: 10px; }
 
@@ -54,20 +57,24 @@ header img {
 
 /*ABOUT US */
 .bloque_aboutus {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-bottom: 50px; }
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin-bottom: 10px; }
   .bloque_aboutus img {
-    width: 100%;
+    border-radius: 100%;
     border: 1px solid black; }
   .bloque_aboutus p {
     font-family: "Pavanam", sans-serif;
-    font-size: 1.2em;
-    padding-top: 50px; }
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .bloque_aboutus p a:hover {
+      text-decoration: none; }
 
 .iframe-videos {
-  width: 400px;
-  height: 220px; }
+  width: 530px;
+  height: 220px;
+  border: 1px solid black; }
 
 /*ARTISTS*/
 .bloque_artista {
@@ -245,7 +252,6 @@ header img {
       line-height: 1.3em; }
   /*ABOUT US*/
   .bloque_aboutus img {
-    width: 100%;
     height: 9em; }
   .bloque_aboutus p {
     font-size: 0.9em; }
@@ -302,6 +308,5 @@ header img {
     font-size: 0.6em;
     color: black; }
   .artista img {
-    width: 90%;
     height: 15em;
     border: 1px solid black; } }
