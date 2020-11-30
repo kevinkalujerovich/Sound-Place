@@ -27,9 +27,10 @@ header img {
 
 /*INDEX*/
 .body-index {
-  background-color: black; }
+  background-color: white; }
   .body-index .box_principal {
-    padding-top: 70px;
+    padding-top: 40px;
+    padding-bottom: 20px;
     background-color: black; }
     .body-index .box_principal h1 {
       font-family: "Oswald", sans-serif;
@@ -39,38 +40,43 @@ header img {
     .body-index .box_principal p {
       color: white; }
     .body-index .box_principal img {
-      width: 200px; }
+      width: 200px;
+      border-radius: 50%;
+      display: inline-block; }
   .body-index .bloque_index {
     padding-top: 60px;
     padding-bottom: 10px; }
     .body-index .bloque_index h2 {
-      color: white;
+      color: black;
       font-size: 2.5em;
       font-family: "Oswald", sans-serif;
       margin-bottom: 40px; }
     .body-index .bloque_index .car_style-body {
-      border: 1px solid white;
-      background-color: black; }
+      border: 1px solid black; }
       .body-index .bloque_index .car_style-body a:hover {
         text-decoration: none; }
       .body-index .bloque_index .car_style-body h5 {
-        color: white;
+        color: black;
         font-family: "Pavanam", sans-serif;
         font-weight: bold;
         padding-bottom: 13px; }
       .body-index .bloque_index .car_style-body p {
-        color: white;
+        color: black;
         font-size: 15px; }
       .body-index .bloque_index .car_style-body .car_style-footer {
         background-color: black; }
+      .body-index .bloque_index .car_style-body img {
+        border-bottom: 1px solid black; }
   .body-index .carrousel-box {
     margin-top: 50px;
     margin-bottom: 80px; }
     .body-index .carrousel-box h2 {
-      color: white;
+      color: black;
       font-size: 2.5em;
       font-family: "Oswald", sans-serif;
       margin-bottom: 40px; }
+  .body-index .img_carrusel-borde {
+    border: 1px solid black; }
   .body-index .btn_index {
     margin-top: 30px;
     margin-bottom: 80px; }
@@ -267,9 +273,10 @@ header img {
   .body-index .box_principal {
     padding-bottom: 50px; }
     .body-index .box_principal h1 {
-      font-size: 2.5em; }
+      font-size: 2.9em; }
     .body-index .box_principal p {
-      color: white; }
+      color: white;
+      font-size: 13px; }
     .body-index .box_principal img {
       width: 150px; }
   .titulo_principal {
@@ -326,7 +333,9 @@ header img {
     .body-index .box_principal p {
       color: white; }
     .body-index .box_principal img {
-      width: 150px; } }
+      width: 150px; }
+  .body-index .btn_index {
+    font-size: 15px; } }
 
 @media (min-width: 0px) and (max-width: 768px) {
   /*NAVIGATION*/
@@ -465,6 +474,3 @@ header img {
     visibility: visible;
     display: block;
     visibility: visible; } }
-
-.img_carrusel-borde {
-  border: 1px solid white; }

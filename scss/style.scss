@@ -45,9 +45,10 @@ header{
 }
 /*INDEX*/
 .body-index{
-    background-color:$color_principal;
+    background-color:$color_secundario;
     .box_principal{
-        padding-top: 70px;
+        padding-top: 40px;
+        padding-bottom: 20px;
         background-color: $color_principal;
         h1{
             font-family:$font_principal;
@@ -60,6 +61,8 @@ header{
         }
         img{
             width: 200px;
+            border-radius: 50%;
+            display: inline-block;
         }
     }
 
@@ -67,31 +70,33 @@ header{
         padding-top: 60px;
         padding-bottom:10px;
         h2{
-            color:$color_secundario;
+            color:$color_principal;
             font-size:2.5em;
             font-family: $font_principal;
             margin-bottom: 40px;
         }
         .car_style-body{
-            border:1px solid $color_secundario;
-            background-color: black;
+            border:1px solid $color_principal;
             a:hover{
                 text-decoration: none;
                 
             }
             h5{
-                color:$color_secundario;
+                color:$color_principal;
                 font-family: $font_secundario;
                 font-weight: $font_weigth;
                 padding-bottom: 13px;
             }
             p{
-                color:$color_secundario;
+                color:$color_principal;
                 font-size:15px;
             }
             .car_style-footer{
                 background-color:$color_principal;
             }
+        img{
+            border-bottom: 1px solid $color_principal;
+        }
         }
      
     }
@@ -99,13 +104,15 @@ header{
         margin-top: 50px;
         margin-bottom: 80px;
         h2{
-            color:$color_secundario;
+            color:$color_principal;
             font-size:2.5em;
             font-family: $font_principal;
             margin-bottom: 40px;
         }
     }
-   
+    .img_carrusel-borde{
+        border:1px solid $color_principal;
+    }
     .btn_index{
         margin-top:30px;
         margin-bottom: 80px;
@@ -349,10 +356,11 @@ a{
             padding-bottom: 50px;
             h1{
                 
-                font-size: 2.5em;
+                font-size: 2.9em;
             }
             p{
                 color:$color_secundario;
+                font-size: 13px;
             }
             img{
                 width: 150px;
@@ -463,6 +471,10 @@ a{
             img{
                 width: 150px;
             }
+        }
+        .btn_index{
+            font-size:15px;
+            
         }
     }
 
@@ -636,7 +648,4 @@ a{
         display: block;
         visibility: visible;
     }
-}
-.img_carrusel-borde{
-    border:1px solid $color_secundario;
 }
