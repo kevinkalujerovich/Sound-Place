@@ -13,7 +13,7 @@ nav {
   height: 100vh; }
   .nav-estilo a {
     font-size: 3.5em;
-    font-family: "Oswald", sans-serif;
+    font-family: "Pavanam", sans-serif;
     line-height: 1.8em;
     letter-spacing: 5px; }
 
@@ -28,37 +28,49 @@ header img {
 /*INDEX*/
 .body-index {
   background-color: black; }
+  .body-index .box_principal {
+    padding-top: 70px;
+    background-color: black; }
+    .body-index .box_principal h1 {
+      font-family: "Oswald", sans-serif;
+      padding-top: 30px;
+      color: white;
+      font-size: 7.5em; }
+    .body-index .box_principal p {
+      color: white; }
+    .body-index .box_principal img {
+      width: 200px; }
   .body-index .bloque_index {
     padding-top: 60px;
     padding-bottom: 10px; }
-    .body-index .bloque_index h1 {
+    .body-index .bloque_index h2 {
       color: white;
       font-size: 2.5em;
       font-family: "Oswald", sans-serif;
-      margin-bottom: 20px; }
+      margin-bottom: 40px; }
+    .body-index .bloque_index .car_style-body {
+      border: 1px solid white;
+      background-color: black; }
+      .body-index .bloque_index .car_style-body a:hover {
+        text-decoration: none; }
+      .body-index .bloque_index .car_style-body h5 {
+        color: white;
+        font-family: "Pavanam", sans-serif;
+        font-weight: bold;
+        padding-bottom: 13px; }
+      .body-index .bloque_index .car_style-body p {
+        color: white;
+        font-size: 15px; }
+      .body-index .bloque_index .car_style-body .car_style-footer {
+        background-color: black; }
   .body-index .carrousel-box {
     margin-top: 50px;
     margin-bottom: 80px; }
-  .body-index h2 {
-    color: white;
-    font-size: 2.5em;
-    font-family: "Oswald", sans-serif;
-    margin-bottom: 40px; }
-  .body-index .car_style-body {
-    border: 1px solid white;
-    background-color: black; }
-    .body-index .car_style-body a:hover {
-      text-decoration: none; }
-  .body-index h5 {
-    color: white;
-    font-family: "Pavanam", sans-serif;
-    font-weight: bold;
-    padding-bottom: 13px; }
-  .body-index p {
-    color: white;
-    font-size: 15px; }
-  .body-index .car_style-footer {
-    background-color: black; }
+    .body-index .carrousel-box h2 {
+      color: white;
+      font-size: 2.5em;
+      font-family: "Oswald", sans-serif;
+      margin-bottom: 40px; }
   .body-index .btn_index {
     margin-top: 30px;
     margin-bottom: 80px; }
@@ -132,12 +144,10 @@ header img {
 .card-body a {
   margin-left: 5px;
   margin-right: 5px;
-  font-size: 0.8em;
-  color: gray; }
+  font-size: 0.8em; }
 
 .card-body a:hover {
-  text-decoration: none;
-  color: black; }
+  text-decoration: none; }
 
 .bloque-card {
   margin-bottom: 20px;
@@ -146,6 +156,8 @@ header img {
 .bloque_card-modelo {
   width: 100%;
   border: 1px solid black; }
+  .bloque_card-modelo img {
+    border-bottom: 1px solid black; }
 
 .link {
   padding-top: 40px;
@@ -252,11 +264,16 @@ header img {
 
 /*SALTOS*/
 @media (max-width: 425px) {
+  .body-index .box_principal {
+    padding-bottom: 50px; }
+    .body-index .box_principal h1 {
+      font-size: 2.5em; }
+    .body-index .box_principal p {
+      color: white; }
+    .body-index .box_principal img {
+      width: 150px; }
   .titulo_principal {
     font-size: 200%; }
-  /*INDEX*/
-  .body-index .bloque_index {
-    padding-top: 20%; }
   /*NAVIGATION*/
   .nav-estilo {
     padding-top: 40px; }
@@ -300,6 +317,16 @@ header img {
   .modal-content img {
     width: 100%;
     height: 9em; } }
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .body-index .box_principal {
+    padding-bottom: 50px; }
+    .body-index .box_principal h1 {
+      font-size: 2.5em; }
+    .body-index .box_principal p {
+      color: white; }
+    .body-index .box_principal img {
+      width: 150px; } }
 
 @media (min-width: 0px) and (max-width: 768px) {
   /*NAVIGATION*/

@@ -25,7 +25,7 @@ body {
     height: 100vh;
     a{
         font-size: 3.5em;
-        font-family:$font_principal;
+        font-family:$font_secundario;
         line-height: 1.8em;
         letter-spacing: 5px;
     }
@@ -46,48 +46,66 @@ header{
 /*INDEX*/
 .body-index{
     background-color:$color_principal;
+    .box_principal{
+        padding-top: 70px;
+        background-color: $color_principal;
+        h1{
+            font-family:$font_principal;
+            padding-top: 30px;
+            color:$color_secundario;
+            font-size: 7.5em;
+        }
+        p{
+            color:$color_secundario;
+        }
+        img{
+            width: 200px;
+        }
+    }
+
     .bloque_index{
         padding-top: 60px;
         padding-bottom:10px;
-        h1{
+        h2{
             color:$color_secundario;
             font-size:2.5em;
             font-family: $font_principal;
-        margin-bottom: 20px;
+            margin-bottom: 40px;
         }
+        .car_style-body{
+            border:1px solid $color_secundario;
+            background-color: black;
+            a:hover{
+                text-decoration: none;
+                
+            }
+            h5{
+                color:$color_secundario;
+                font-family: $font_secundario;
+                font-weight: $font_weigth;
+                padding-bottom: 13px;
+            }
+            p{
+                color:$color_secundario;
+                font-size:15px;
+            }
+            .car_style-footer{
+                background-color:$color_principal;
+            }
+        }
+     
     }
     .carrousel-box{
         margin-top: 50px;
         margin-bottom: 80px;
-    }
-
-
-    h2{
-        color:$color_secundario;
-        font-size:2.5em;
-        font-family: $font_principal;
-        margin-bottom: 40px;
-    }
-    .car_style-body{
-        border:1px solid $color_secundario;
-        background-color: black;
-        a:hover{
-            text-decoration: none;
+        h2{
+            color:$color_secundario;
+            font-size:2.5em;
+            font-family: $font_principal;
+            margin-bottom: 40px;
         }
     }
-    h5{
-        color:$color_secundario;
-        font-family: $font_secundario;
-        font-weight: $font_weigth;
-        padding-bottom: 13px;
-    }
-    p{
-        color:$color_secundario;
-        font-size:15px;
-    }
-    .car_style-footer{
-        background-color:$color_principal;
-    }
+   
     .btn_index{
         margin-top:30px;
         margin-bottom: 80px;
@@ -180,18 +198,18 @@ header{
         font-size: 0.9em;
     }
 }
+
 .card-body{
 
     a{
         margin-left: 5px;
         margin-right: 5px;
         font-size:0.8em;
-        color:gray;
     }
     a:hover{
         text-decoration: none;
-        color:$color_principal;
     }
+
 
 }
 .bloque-card{
@@ -202,6 +220,9 @@ header{
 .bloque_card-modelo{
     width: 100%;
     border: 1px solid $color_principal;
+    img{
+        border-bottom: 1px solid $color_principal;
+    }
 }
 .link{
     padding-top: 40px;
@@ -323,19 +344,28 @@ a{
 }
 /*SALTOS*/
 @media (max-width: 425px){
+    .body-index{
+        .box_principal{
+            padding-bottom: 50px;
+            h1{
+                
+                font-size: 2.5em;
+            }
+            p{
+                color:$color_secundario;
+            }
+            img{
+                width: 150px;
+            }
+        }
+    }
+
+
+
 .titulo_principal{
     font-size: 200%;
 }
-
-  
-    /*INDEX*/
-    .body-index{
-        .bloque_index{
-            padding-top: 20%;
-            
-        }
-      
-    }
+   
     /*NAVIGATION*/
     .nav-estilo{
         padding-top: 40px;
@@ -419,6 +449,24 @@ a{
 
 
 }
+@media (min-width: 425px) and (max-width:768px){
+    .body-index{
+        .box_principal{
+            padding-bottom: 50px;
+            h1{
+                
+                font-size: 2.5em;
+            }
+            p{
+                color:$color_secundario;
+            }
+            img{
+                width: 150px;
+            }
+        }
+    }
+
+}
 @media (min-width: 0px) and (max-width:768px){
 /*NAVIGATION*/
 .nav-estilo{
@@ -431,7 +479,7 @@ a{
 }
 
 @media (min-width: 768px) and (max-width:1024px){
-   
+    
     /*ABOUT US*/
     .iframe-videos{
         width:300px; 
