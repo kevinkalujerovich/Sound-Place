@@ -70,6 +70,11 @@ header{
             margin-bottom: 10px;
             border: 1px solid $color_principal;
         }
+        .iframe_videos-sound{
+            width:100%;
+            height:205px;
+            border: 1px solid $color_principal;
+        }
     }
 
     .bloque_index{
@@ -86,7 +91,6 @@ header{
             border-bottom: 1px solid $color_principal;
         }
         .car_style-body{
-            border:1px solid $color_principal;
             a:hover{
                 text-decoration: none;
                 
@@ -105,9 +109,6 @@ header{
             .car_style-footer{
                 background-color:$color_principal;
             }
-        img{
-            border-bottom: 1px solid $color_principal;
-        }
         }
      
     }
@@ -244,7 +245,6 @@ header{
 
 .bloque_card-modelo{
     width: 100%;
-    border: 1px solid $color_principal;
     img{
         border-bottom: 1px solid $color_principal;
     }
