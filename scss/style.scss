@@ -36,6 +36,12 @@ body {
 }
 }
 header{
+    a{
+        font-family:$font_principal;
+    }
+    a:hover{
+        color:$color_secundario;
+    }
     img{
         margin-right:0.4em ;
         margin-bottom: 0.2em;
@@ -46,34 +52,38 @@ header{
 /*INDEX*/
 .body-index{
     background-color:$color_secundario;
-    .box_principal{
-        padding-top: 40px;
-        padding-bottom: 20px;
-        background-color: $color_principal;
+    .box_index{
+        padding-top: 100px;
         h1{
-            font-family:$font_principal;
-            padding-top: 30px;
-            color:$color_secundario;
-            font-size: 7.5em;
-        }
-        p{
-            color:$color_secundario;
+            font-family: $font_principal;
+            font-size:1.5em;
+            color:$color_principal;
+            background-color:whitesmoke;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left:5px;
+            border-bottom: 1px solid $color_principal;
         }
         img{
-            width: 200px;
-            border-radius: 50%;
-            display: inline-block;
+            height: 400px;
+            width: 100%;
+            margin-bottom: 10px;
+            border: 1px solid $color_principal;
         }
     }
 
     .bloque_index{
-        padding-top: 60px;
+        padding-top: 10px;
         padding-bottom:10px;
         h2{
-            color:$color_principal;
-            font-size:2.5em;
             font-family: $font_principal;
-            margin-bottom: 40px;
+            font-size:1.5em;
+            color:$color_principal;
+            background-color:whitesmoke;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left:5px;
+            border-bottom: 1px solid $color_principal;
         }
         .car_style-body{
             border:1px solid $color_principal;
@@ -84,7 +94,8 @@ header{
             h5{
                 color:$color_principal;
                 font-family: $font_secundario;
-                font-weight: $font_weigth;
+                font-weight:$font_weigth;
+                font-size: 1em;
                 padding-bottom: 13px;
             }
             p{
@@ -104,10 +115,15 @@ header{
         margin-top: 50px;
         margin-bottom: 80px;
         h2{
-            color:$color_principal;
-            font-size:2.5em;
             font-family: $font_principal;
-            margin-bottom: 40px;
+            font-size:1.5em;
+            color:$color_principal;
+            background-color:whitesmoke;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left:5px;
+            border-bottom: 1px solid $color_principal;
+            margin-bottom: 30px;
         }
     }
     .img_carrusel-borde{
@@ -212,9 +228,11 @@ header{
         margin-left: 5px;
         margin-right: 5px;
         font-size:0.8em;
+        color:gray;
     }
     a:hover{
         text-decoration: none;
+        color:$color_principal;
     }
 
 
@@ -352,18 +370,9 @@ a{
 /*SALTOS*/
 @media (max-width: 425px){
     .body-index{
-        .box_principal{
-            padding-bottom: 50px;
-            h1{
-                
-                font-size: 2.9em;
-            }
-            p{
-                color:$color_secundario;
-                font-size: 13px;
-            }
+        .box_index{
             img{
-                width: 150px;
+                height: 300px;
             }
         }
     }
@@ -475,6 +484,12 @@ a{
         .btn_index{
             font-size:15px;
             
+        }
+    }
+    .car_style-body{
+        p{
+            color:$color_principal;
+            font-size:15px;
         }
     }
 

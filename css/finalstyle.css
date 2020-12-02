@@ -20,6 +20,12 @@ nav {
 .navbar-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
 
+header a {
+  font-family: "Oswald", sans-serif; }
+
+header a:hover {
+  color: white; }
+
 header img {
   margin-right: 0.4em;
   margin-bottom: 0.2em;
@@ -28,29 +34,34 @@ header img {
 /*INDEX*/
 .body-index {
   background-color: white; }
-  .body-index .box_principal {
-    padding-top: 40px;
-    padding-bottom: 20px;
-    background-color: black; }
-    .body-index .box_principal h1 {
+  .body-index .box_index {
+    padding-top: 100px; }
+    .body-index .box_index h1 {
       font-family: "Oswald", sans-serif;
-      padding-top: 30px;
-      color: white;
-      font-size: 7.5em; }
-    .body-index .box_principal p {
-      color: white; }
-    .body-index .box_principal img {
-      width: 200px;
-      border-radius: 50%;
-      display: inline-block; }
+      font-size: 1.5em;
+      color: black;
+      background-color: whitesmoke;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 5px;
+      border-bottom: 1px solid black; }
+    .body-index .box_index img {
+      height: 400px;
+      width: 100%;
+      margin-bottom: 10px;
+      border: 1px solid black; }
   .body-index .bloque_index {
-    padding-top: 60px;
+    padding-top: 10px;
     padding-bottom: 10px; }
     .body-index .bloque_index h2 {
-      color: black;
-      font-size: 2.5em;
       font-family: "Oswald", sans-serif;
-      margin-bottom: 40px; }
+      font-size: 1.5em;
+      color: black;
+      background-color: whitesmoke;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 5px;
+      border-bottom: 1px solid black; }
     .body-index .bloque_index .car_style-body {
       border: 1px solid black; }
       .body-index .bloque_index .car_style-body a:hover {
@@ -59,6 +70,7 @@ header img {
         color: black;
         font-family: "Pavanam", sans-serif;
         font-weight: bold;
+        font-size: 1em;
         padding-bottom: 13px; }
       .body-index .bloque_index .car_style-body p {
         color: black;
@@ -71,10 +83,15 @@ header img {
     margin-top: 50px;
     margin-bottom: 80px; }
     .body-index .carrousel-box h2 {
-      color: black;
-      font-size: 2.5em;
       font-family: "Oswald", sans-serif;
-      margin-bottom: 40px; }
+      font-size: 1.5em;
+      color: black;
+      background-color: whitesmoke;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 5px;
+      border-bottom: 1px solid black;
+      margin-bottom: 30px; }
   .body-index .img_carrusel-borde {
     border: 1px solid black; }
   .body-index .btn_index {
@@ -150,10 +167,12 @@ header img {
 .card-body a {
   margin-left: 5px;
   margin-right: 5px;
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  color: gray; }
 
 .card-body a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+  color: black; }
 
 .bloque-card {
   margin-bottom: 20px;
@@ -270,15 +289,8 @@ header img {
 
 /*SALTOS*/
 @media (max-width: 425px) {
-  .body-index .box_principal {
-    padding-bottom: 50px; }
-    .body-index .box_principal h1 {
-      font-size: 2.9em; }
-    .body-index .box_principal p {
-      color: white;
-      font-size: 13px; }
-    .body-index .box_principal img {
-      width: 150px; }
+  .body-index .box_index img {
+    height: 300px; }
   .titulo_principal {
     font-size: 200%; }
   /*NAVIGATION*/
@@ -335,6 +347,9 @@ header img {
     .body-index .box_principal img {
       width: 150px; }
   .body-index .btn_index {
+    font-size: 15px; }
+  .car_style-body p {
+    color: black;
     font-size: 15px; } }
 
 @media (min-width: 0px) and (max-width: 768px) {
