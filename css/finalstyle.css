@@ -162,7 +162,8 @@ header img {
     font-family: "Oswald", sans-serif;
     font-weight: bold; }
   .bloque p {
-    font-size: 0.9em; }
+    font-size: 0.9em;
+    line-height: 5px; }
 
 .card-body a {
   margin-left: 5px;
@@ -179,7 +180,8 @@ header img {
   align-items: center; }
 
 .bloque_card-modelo {
-  width: 100%; }
+  width: 100%;
+  border: 1px solid white; }
   .bloque_card-modelo img {
     border-bottom: 1px solid black; }
 

@@ -220,6 +220,7 @@ header{
     }
     p{
         font-size: 0.9em;
+        line-height: 5px;
     }
 }
 
@@ -237,6 +238,7 @@ header{
     }
 
 
+
 }
 .bloque-card{
     margin-bottom: 20px;
@@ -245,6 +247,7 @@ header{
 
 .bloque_card-modelo{
     width: 100%;
+    border:1px solid white;
     img{
         border-bottom: 1px solid $color_principal;
     }
